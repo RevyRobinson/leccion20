@@ -8,6 +8,11 @@ function promedioCallback (a,b,c,callback){
 //function segundero
 
 function segundero () {
-	document.getElementById("titulo").innerHTML = setInterval(promedioCallback(5,8,6,alert), 1000);
+	document.getElementById("titulo").innerHTML = 1;
+	setInterval(function(){
+		var segundos = parseInt(document.getElementById("titulo").innerHTML) ;
+		document.getElementById("titulo").innerHTML = segundos + 1 ;
+
+	}, 1000);
 	
 }
